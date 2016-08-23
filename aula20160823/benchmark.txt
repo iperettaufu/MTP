@@ -1,0 +1,26 @@
+seq2
+5 6 = 15
+
+seq3 
+4 6 7 = 6.1
+
+dec1
+52 par
+6 par m3
+35 impar m5 m7
+
+dec2
+se o usuario so colocar 3
++- 50% das vezes ganha
+
+dec3
++- 50% das vezes ganha
+
+ite1
+1 = 1
+5 = 120
+12 = 479.001.600
+
+ger1 
+11 primo
+121 nao e primo
