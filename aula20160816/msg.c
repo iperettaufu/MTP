@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 		printf("Bom dia, mundo!\n");
 	else
 		if(argc == 2)
-			printf("Bom dia, %s!\n", argv[1]);
+			printf("Bons dias, %s!\n", argv[1]);
 		else
 			for(i = 0; i < atoi(argv[1]); i++)
 				printf("Bom dia, %s!\n", argv[2]);
