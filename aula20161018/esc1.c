@@ -3,6 +3,7 @@
 #include <string.h>
 char * iniciaTexto();
 char * recebeTexto();
+void gravaTexto(char * texto, int nchar);
 int main() {
     char * texto;
     printf("::: Inicio (para sair, tecle #,ENTER) :::::::::::\n");
@@ -35,5 +36,19 @@ char * recebeTexto() {
             else printf("\n** Erro! Sem memoria! **\n");
         }
     } while(c != '#');
+    gravaTexto(texto, strlen(texto));
     return texto;
+}
+
+void gravaTexto(char * texto, int nchar) {
+    FILE *arquivo;
+    int i;
+    arquivo = fopen("meutexto.txt","w");
+    if(arquivo == NULL)
+        fprintf(stderr, "Erro na criacao do arquivo!\n");
+    else {
+        for(i = 0; i < nchar; i++)
+            fputc(texto[i], arquivo);
+        fclose(arquivo);
+    }
 }

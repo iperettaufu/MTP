@@ -2,15 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 char * iniciaTexto();
-char * recebeTexto();
+void recebeTexto(char ** texto);
 int main() {
-    char * texto;
-    printf("::: Inicio (para sair, tecle #,ENTER) :::::::::::\n");
-    texto = recebeTexto();
+    char * texto = iniciaTexto();
+    printf("::: Inicio :::::::::::\n");
+    recebeTexto(&texto);
     printf("\n::: Na memoria :::::::::::\n");
     printf("%s\n", texto);
     printf("\nTamanho da string: %d\n", strlen(texto));
-    free(texto);
     return 0;
 }
 char * iniciaTexto() {
@@ -18,22 +17,20 @@ char * iniciaTexto() {
     texto[0] = '\0';
     return texto;
 }
-char * recebeTexto() {
-    char * texto = iniciaTexto();
+void recebeTexto(char ** texto) {
     char * aux;
     int c, tamanho = 0;
     do {
         c = getchar();
         if(c != '#') {
-            aux = (char *) realloc(texto, tamanho+2);
+            aux = (char *) realloc(*texto, tamanho+2);
             if(aux != NULL) {
-                texto = aux;
-                texto[tamanho] = c;
+                *texto = aux;
+                (*texto)[tamanho] = c;
                 tamanho++;
-                texto[tamanho] = '\0';
+                (*texto)[tamanho] = '\0';
             }
             else printf("\n** Erro! Sem memoria! **\n");
         }
     } while(c != '#');
-    return texto;
 }
