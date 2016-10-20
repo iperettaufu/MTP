@@ -6,6 +6,8 @@
 	#define printf winprintf
 #endif
 
+/* O PROGRAMA ESTÁ COM ERRO */
+
 char * winprintf(char * texto);
 
 int main(){
