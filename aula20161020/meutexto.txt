@@ -1,0 +1,21 @@
+Querido diario
+Hoje eu cheguei no meio da chuva
+Foi ruim porque molhou minhas calcas
+Estou desconfortavel
+qUEM SABE AMANHA SERA UM NOVO DIA?
+Lista de coisas:
+	- um;
+	- dois;
+	- tres;
+fazendo teste: ??&&&&?
+Tudo bem?
+Esta †uma nova entrada do meu querido dirio
+fiquei feliz porque o encoding do programa traduz
+corretamente o encoding gravado no arquivo texto
+Acredito que se mudarmos o encoding do bloco de
+notas, enxergaremos o texto correto l tambÌ.
+Atená∆o, elÇtrica vocà n∆o
+Trabalha com OEM-850 (character encoding GCC no Windows)
+†Ç°¢£Öàì∆‰áÄ
+µê÷‡È∑“‚«ÂÄá
+
