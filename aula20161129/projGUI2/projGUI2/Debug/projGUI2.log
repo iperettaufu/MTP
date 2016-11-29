@@ -1,7 +1,7 @@
-﻿Build started 29/11/2016 10:23:51.
+﻿Build started 29/11/2016 12:04:17.
      1>Project "C:\Users\1E30\Documents\MTP\aula20161129\projGUI2\projGUI2\projGUI2.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\projGUI2.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\projGUI2.unsuccessfulbuild".
        GenerateTargetFrameworkMonikerAttribute:
        Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
        ClCompile:
@@ -29,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.76
+Time Elapsed 00:00:00.85

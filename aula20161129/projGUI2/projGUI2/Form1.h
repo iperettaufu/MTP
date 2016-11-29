@@ -1,4 +1,6 @@
-﻿#pragma once
+﻿#include <cmath>
+
+#pragma once
 
 namespace projGUI2 {
 
@@ -123,6 +125,7 @@ namespace projGUI2 {
 			this->btn7->TabIndex = 1;
 			this->btn7->Text = L"7";
 			this->btn7->UseVisualStyleBackColor = false;
+			this->btn7->Click += gcnew System::EventHandler(this, &Form1::btn7_Click);
 			// 
 			// btn8
 			// 
@@ -138,6 +141,7 @@ namespace projGUI2 {
 			this->btn8->TabIndex = 1;
 			this->btn8->Text = L"8";
 			this->btn8->UseVisualStyleBackColor = false;
+			this->btn8->Click += gcnew System::EventHandler(this, &Form1::btn8_Click);
 			// 
 			// btn9
 			// 
@@ -153,6 +157,7 @@ namespace projGUI2 {
 			this->btn9->TabIndex = 1;
 			this->btn9->Text = L"9";
 			this->btn9->UseVisualStyleBackColor = false;
+			this->btn9->Click += gcnew System::EventHandler(this, &Form1::btn9_Click);
 			// 
 			// btnAdicao
 			// 
@@ -168,6 +173,7 @@ namespace projGUI2 {
 			this->btnAdicao->TabIndex = 1;
 			this->btnAdicao->Text = L"+";
 			this->btnAdicao->UseVisualStyleBackColor = false;
+			this->btnAdicao->Click += gcnew System::EventHandler(this, &Form1::btnAdicao_Click);
 			// 
 			// btnApaga
 			// 
@@ -183,6 +189,7 @@ namespace projGUI2 {
 			this->btnApaga->TabIndex = 1;
 			this->btnApaga->Text = L"CE";
 			this->btnApaga->UseVisualStyleBackColor = false;
+			this->btnApaga->Click += gcnew System::EventHandler(this, &Form1::btnApaga_Click);
 			// 
 			// btn4
 			// 
@@ -198,6 +205,7 @@ namespace projGUI2 {
 			this->btn4->TabIndex = 1;
 			this->btn4->Text = L"4";
 			this->btn4->UseVisualStyleBackColor = false;
+			this->btn4->Click += gcnew System::EventHandler(this, &Form1::btn4_Click);
 			// 
 			// btn5
 			// 
@@ -213,6 +221,7 @@ namespace projGUI2 {
 			this->btn5->TabIndex = 1;
 			this->btn5->Text = L"5";
 			this->btn5->UseVisualStyleBackColor = false;
+			this->btn5->Click += gcnew System::EventHandler(this, &Form1::btn5_Click);
 			// 
 			// btn6
 			// 
@@ -228,6 +237,7 @@ namespace projGUI2 {
 			this->btn6->TabIndex = 1;
 			this->btn6->Text = L"6";
 			this->btn6->UseVisualStyleBackColor = false;
+			this->btn6->Click += gcnew System::EventHandler(this, &Form1::btn6_Click);
 			// 
 			// btnSubtracao
 			// 
@@ -243,6 +253,7 @@ namespace projGUI2 {
 			this->btnSubtracao->TabIndex = 1;
 			this->btnSubtracao->Text = L"-";
 			this->btnSubtracao->UseVisualStyleBackColor = false;
+			this->btnSubtracao->Click += gcnew System::EventHandler(this, &Form1::btnSubtracao_Click);
 			// 
 			// btnFatorial
 			// 
@@ -258,6 +269,7 @@ namespace projGUI2 {
 			this->btnFatorial->TabIndex = 1;
 			this->btnFatorial->Text = L"n!";
 			this->btnFatorial->UseVisualStyleBackColor = false;
+			this->btnFatorial->Click += gcnew System::EventHandler(this, &Form1::btnFatorial_Click);
 			// 
 			// btn1
 			// 
@@ -289,6 +301,7 @@ namespace projGUI2 {
 			this->btn2->TabIndex = 1;
 			this->btn2->Text = L"2";
 			this->btn2->UseVisualStyleBackColor = false;
+			this->btn2->Click += gcnew System::EventHandler(this, &Form1::btn2_Click);
 			// 
 			// btn3
 			// 
@@ -304,6 +317,7 @@ namespace projGUI2 {
 			this->btn3->TabIndex = 1;
 			this->btn3->Text = L"3";
 			this->btn3->UseVisualStyleBackColor = false;
+			this->btn3->Click += gcnew System::EventHandler(this, &Form1::btn3_Click);
 			// 
 			// btnMultiplicacao
 			// 
@@ -319,6 +333,7 @@ namespace projGUI2 {
 			this->btnMultiplicacao->TabIndex = 1;
 			this->btnMultiplicacao->Text = L"×";
 			this->btnMultiplicacao->UseVisualStyleBackColor = false;
+			this->btnMultiplicacao->Click += gcnew System::EventHandler(this, &Form1::btnMultiplicacao_Click);
 			// 
 			// btnPotencia
 			// 
@@ -334,6 +349,7 @@ namespace projGUI2 {
 			this->btnPotencia->TabIndex = 1;
 			this->btnPotencia->Text = L"xʸ";
 			this->btnPotencia->UseVisualStyleBackColor = false;
+			this->btnPotencia->Click += gcnew System::EventHandler(this, &Form1::btnPotencia_Click);
 			// 
 			// btn0
 			// 
@@ -397,6 +413,7 @@ namespace projGUI2 {
 			this->btnDivisao->TabIndex = 1;
 			this->btnDivisao->Text = L"÷";
 			this->btnDivisao->UseVisualStyleBackColor = false;
+			this->btnDivisao->Click += gcnew System::EventHandler(this, &Form1::btnDivisao_Click);
 			// 
 			// btnRaizQuadrada
 			// 
@@ -412,6 +429,7 @@ namespace projGUI2 {
 			this->btnRaizQuadrada->TabIndex = 1;
 			this->btnRaizQuadrada->Text = L"√¯";
 			this->btnRaizQuadrada->UseVisualStyleBackColor = false;
+			this->btnRaizQuadrada->Click += gcnew System::EventHandler(this, &Form1::btnRaizQuadrada_Click);
 			// 
 			// btnResultado
 			// 
@@ -427,6 +445,7 @@ namespace projGUI2 {
 			this->btnResultado->TabIndex = 1;
 			this->btnResultado->Text = L"=";
 			this->btnResultado->UseVisualStyleBackColor = false;
+			this->btnResultado->Click += gcnew System::EventHandler(this, &Form1::btnResultado_Click);
 			// 
 			// Form1
 			// 
@@ -465,21 +484,47 @@ namespace projGUI2 {
 		}
 		#define MAXDIGITOS 15
 		bool flagVirgula;
+		bool flagResultado;
+		double memoria;
+		char operacao;
+		void liberaDisplay()
+		{
+			lblDisplay->Text = "0";
+			flagVirgula = false;
+			flagResultado = false;
+		}
+		double fatorial(double numero)
+		{
+			return (numero > 1)? numero*fatorial(numero-1) : 1;
+		}
 #pragma endregion
 		private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e) {
 			 flagVirgula = false;
+			 flagResultado = false;
+			 memoria = 0.0;
+			 operacao = '\0';
+		 }
+	private: System::Void btnApaga_Click(System::Object^  sender, System::EventArgs^  e) {
+				  liberaDisplay();
 		 }
 	private: System::Void btn0_Click(System::Object^  sender, System::EventArgs^  e) {
-				 if(lblDisplay->Text->Length < MAXDIGITOS)
+				 if(lblDisplay->Text->Length < MAXDIGITOS) {
 					if(lblDisplay->Text != "0")
 						lblDisplay->Text = lblDisplay->Text + "0";
+					if(flagResultado) {
+						lblDisplay->Text = "0";
+						flagResultado = false;
+					}
+				 }
 			 }
 	private: System::Void btn1_Click(System::Object^  sender, System::EventArgs^  e) {
 				 if(lblDisplay->Text->Length < MAXDIGITOS) {
-					 if(lblDisplay->Text != "0")
+					 if(lblDisplay->Text != "0" && !flagResultado)
 						 lblDisplay->Text = lblDisplay->Text + "1";
-					 else
+					 else {
 						 lblDisplay->Text = "1";
+						 flagResultado = false;
+					 }
 				 }
 			}
 private: System::Void btnVirgula_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -492,15 +537,159 @@ private: System::Void btnVirgula_Click(System::Object^  sender, System::EventArg
 		 }
 
 private: System::Void btnPosNeg_Click(System::Object^  sender, System::EventArgs^  e) {
-			 // Versão 1
-			 double numero = System::Convert::ToDouble(lblDisplay->Text);
-			 lblDisplay->Text = System::Convert::ToString(numero*(-1));
-			 // Versão 2
-			 if(lblDisplay->Text->Substring(0,1) == "-")
-				 lblDisplay->Text = lblDisplay->Text->Substring(1);
-			 else
-				 lblDisplay->Text = "-" + lblDisplay->Text;
+			 if(lblDisplay->Text != "0") {
+				 // Versão 1
+				 //double numero = System::Convert::ToDouble(lblDisplay->Text);
+				 //lblDisplay->Text = System::Convert::ToString(numero*(-1));
+				 // Versão 2
+				 if(lblDisplay->Text->Substring(0,1) == "-")
+					 lblDisplay->Text = lblDisplay->Text->Substring(1);
+				 else
+					 lblDisplay->Text = "-" + lblDisplay->Text;
+			 }
 		 }
+
+private: System::Void btnPotencia_Click(System::Object^  sender, System::EventArgs^  e) {
+			 memoria = System::Convert::ToDouble(lblDisplay->Text);
+			 operacao = '^';
+			 liberaDisplay();
+		 }
+private: System::Void btnRaizQuadrada_Click(System::Object^  sender, System::EventArgs^  e) {
+			 double numero = System::Convert::ToDouble(lblDisplay->Text);
+			 lblDisplay->Text = System::Convert::ToString(sqrt(numero));
+			 if(lblDisplay->Text->Length > MAXDIGITOS)
+				lblDisplay->Text = lblDisplay->Text->Substring(0,MAXDIGITOS);
+			 flagResultado = true;
+		 }
+
+private: System::Void btnAdicao_Click(System::Object^  sender, System::EventArgs^  e) {
+			 memoria = System::Convert::ToDouble(lblDisplay->Text);
+			 operacao = '+';
+			 liberaDisplay();
+		 }
+private: System::Void btnResultado_Click(System::Object^  sender, System::EventArgs^  e) {
+			 double numero = System::Convert::ToDouble(lblDisplay->Text);
+			 switch(operacao) {
+			 case '+': memoria += numero; break;
+			 case '-': memoria -= numero; break;
+			 case '*': memoria *= numero; break;
+			 case '/': memoria /= numero; break;
+			 case '^': memoria = Math::Pow(memoria,numero); break;
+			 }
+			 if(memoria > Math::Pow(10,MAXDIGITOS) - 1)
+				lblDisplay->Text = memoria.ToString("e");
+			 else
+				 lblDisplay->Text = memoria.ToString();
+			 if(lblDisplay->Text->Length > MAXDIGITOS)
+				lblDisplay->Text = lblDisplay->Text->Substring(0,MAXDIGITOS);
+			 flagResultado = true;
+		 }
+private: System::Void btnFatorial_Click(System::Object^  sender, System::EventArgs^  e) {
+			 double numero = System::Convert::ToDouble(lblDisplay->Text);
+			 numero = fatorial(numero);
+			 if(numero > Math::Pow(10,MAXDIGITOS) - 1)
+				lblDisplay->Text = numero.ToString("e");
+			 else
+				 lblDisplay->Text = numero.ToString();
+			 flagResultado = true;
+		 }
+private: System::Void btnSubtracao_Click(System::Object^  sender, System::EventArgs^  e) {
+			 memoria = System::Convert::ToDouble(lblDisplay->Text);
+			 operacao = '-';
+			 liberaDisplay();
+		 }
+private: System::Void btnMultiplicacao_Click(System::Object^  sender, System::EventArgs^  e) {
+			 memoria = System::Convert::ToDouble(lblDisplay->Text);
+			 operacao = '*';
+			 liberaDisplay();
+		 }
+private: System::Void btnDivisao_Click(System::Object^  sender, System::EventArgs^  e) {
+			 memoria = System::Convert::ToDouble(lblDisplay->Text);
+			 operacao = '/';
+			 liberaDisplay();
+		 }
+
+private: System::Void btn2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "2";
+					 else {
+						 lblDisplay->Text = "2";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn3_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "3";
+					 else {
+						 lblDisplay->Text = "3";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn4_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "4";
+					 else {
+						 lblDisplay->Text = "4";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn5_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "5";
+					 else {
+						 lblDisplay->Text = "5";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn6_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "6";
+					 else {
+						 lblDisplay->Text = "6";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn7_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "7";
+					 else {
+						 lblDisplay->Text = "7";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn8_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "8";
+					 else {
+						 lblDisplay->Text = "8";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+private: System::Void btn9_Click(System::Object^  sender, System::EventArgs^  e) {
+			 if(lblDisplay->Text->Length < MAXDIGITOS) {
+					 if(lblDisplay->Text != "0" && !flagResultado)
+						 lblDisplay->Text = lblDisplay->Text + "9";
+					 else {
+						 lblDisplay->Text = "9";
+						 flagResultado = false;
+					 }
+				 }
+		 }
+
 };
 }
 
